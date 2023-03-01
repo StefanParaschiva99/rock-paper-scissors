@@ -27,8 +27,13 @@ function game() {
         getComputerChoice()
         const computerSelection = getComputerChoice().toLowerCase();
         let playerSelection = prompt("Make your choice between: rock paper and scissors").toLowerCase();
+        if (playerSelection === "scissors" || playerSelection == "rock" || playerSelection === "paper"){
         console.log(playRound(playerSelection, computerSelection))
         console.log("Your score is " + yourScore + " points!")
+        } else {
+            i--
+            window.alert("You have to choose between: scissors, rock and paper! It is not case sensitive but you must spell it correctly")
+        }
     }
 }
 // running the game
