@@ -14,8 +14,20 @@ function playRound(playerSelection, computerSelection) {
     }
     else { return ("You lose!") }
    }
-
+// Global variabe for automatic playerSelection and computerSelection
    let playerSelection = prompt("Make your choice between: rock paper and scissors").toLowerCase();
    const computerSelection = getComputerChoice().toLowerCase();
-   console.log(playRound(playerSelection, computerSelection))
+// 5 rounds game
+function game() {
+    for (let i = 0; i < 5; i++) {
+        getComputerChoice()
+        const computerSelection = getComputerChoice().toLowerCase();
+        let playerSelection = prompt("Make your choice between: rock paper and scissors").toLowerCase();
+        playRound(playerSelection, computerSelection)
+        console.log(playRound(playerSelection, computerSelection))
+    }
+}
+game()
+
+
 
