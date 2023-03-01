@@ -7,27 +7,44 @@ function getComputerChoice() {
 // This function will compare the choises and return a winner
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == "rock" && computerSelection == "scissors" || playerSelection == "paper" && computerSelection == "rock" || playerSelection == "scissors" && computerSelection == "paper") {
+        yourScore ++
         return ("You win!")
     }
     else if (playerSelection == computerSelection) {
         return ("Tie!")
     }
-    else { return ("You lose!") }
+    else {
+        computerScore ++
+        return ("You lose!")
+    }
    }
-// Global variabe for automatic playerSelection and computerSelection
-   let playerSelection = prompt("Make your choice between: rock paper and scissors").toLowerCase();
-   const computerSelection = getComputerChoice().toLowerCase();
+// Global variabe
+let yourScore = 0;
+let computerScore = 0;
 // 5 rounds game
 function game() {
     for (let i = 0; i < 5; i++) {
         getComputerChoice()
         const computerSelection = getComputerChoice().toLowerCase();
         let playerSelection = prompt("Make your choice between: rock paper and scissors").toLowerCase();
-        playRound(playerSelection, computerSelection)
         console.log(playRound(playerSelection, computerSelection))
+        console.log("Your score is " + yourScore + " points!")
     }
 }
 game()
+
+console.log("Your opponent score is " + computerScore + " points!")
+
+if (yourScore > computerScore) {
+    console.log("Congrats. You're the winner!")
+}
+else if (yourScore < computerScore) {
+    console.log("you'll be luckier next time.")
+}
+else{
+    console.log("It's Tie!")
+}
+
 
 
 
