@@ -1,3 +1,6 @@
+// Global variabe
+let yourScore = 0;
+let computerScore = 0;
 // This function get a random choice between this 3 option and returns it
 function getComputerChoice() {
     const choises = ["Rock", "Paper", "Scissors"]
@@ -18,9 +21,6 @@ function playRound(playerSelection, computerSelection) {
         return ("You lose!")
     }
    }
-// Global variabe
-let yourScore = 0;
-let computerScore = 0;
 // 5 rounds game
 function game() {
     for (let i = 0; i < 5; i++) {
@@ -31,6 +31,7 @@ function game() {
         console.log("Your score is " + yourScore + " points!")
     }
 }
+// running the game
 game()
 
 console.log("Your opponent score is " + computerScore + " points!")
