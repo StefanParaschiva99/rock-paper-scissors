@@ -23,7 +23,6 @@ function playRound(playerSelection, computerSelection) {
    }
 // 5 rounds game
 function game() {
-    for (let i = 0; i < 5; i++) {
         getComputerChoice()
         const computerSelection = getComputerChoice().toLowerCase();
         let playerSelection = prompt("Make your choice between: rock paper and scissors").toLowerCase();
@@ -34,10 +33,9 @@ function game() {
             i--
             window.alert("You have to choose between: scissors, rock and paper! It is not case sensitive but you must spell it correctly")
         }
-    }
 }
 // running the game
-game()
+//game()
 
 console.log("Your opponent score is " + computerScore + " points!")
 
