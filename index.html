@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="game-page">
         <div class="header">Rock Paper Scissors</div>
 
         <div class="game">
@@ -17,23 +17,26 @@
                 <div class="computer-score">Computer score is:</div>
             </div>
 
-            <div class="Choices">
+            <div class="choices">
                 <div class="your-choice">
-                    <div class="choice">🤜</div>
-                    <div class="choice-buttons">
-                        <button class="btn">🤜</button>
-                        <button class="btn">🤚</button>
-                        <button class="btn">✌️</button>
-                    </div>
+                    <div class="btn">🤜</div>
+                    <div class="icon"><img src="images/frankenstein.png" alt="player icon"></div>
                 </div>
-                <div class="computer-choice">🤚</div>
+                <div class="result">LOSE!</div>
+                <div class="computer-choice">
+                    <div class="btn">🤜</div>
+                    <div class="icon"><img src="images/robot.png" alt="computer icon"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn">🤜</button>
+                <button class="btn">🤚</button>
+                <button class="btn">✌️</button>
             </div>
         </div>
 
         <div class="footer">Copyright © StefanParaschiva99 for "The Odin Project" 2023</div>
-    </div>
-
-    <div class="start-page"></div>
  <!-- Script load -->
     <script src="function.js"></script>
 </body>
