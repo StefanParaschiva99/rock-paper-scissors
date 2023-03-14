@@ -21,4 +21,5 @@ Coming soon.
 I created this project for "The Odin Project" course. The motivation was to put into practice what I have studied and verify my skills.
 This was the first "real programming" project, so it was very exciting but also difficult. I've run into quite a few problems, but being able to solve them was a great satisfaction.
 
-
+## Credits
+<a href="https://www.flaticon.com/free-stickers/robots" title="robots stickers">Robots stickers created by bukeicon - Flaticon</a>
