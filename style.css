@@ -73,6 +73,10 @@ body {
     border-radius: 5%;
 }
 
+.start > button:active {
+    transform: translateX(3px) translateY(3px);
+}
+
 .choices {
     display: flex;
     justify-content: space-evenly;
@@ -145,7 +149,7 @@ body {
     border-radius: 5%;
 }
 
-button:active:hover {
+.buttons > button:active:hover {
     transform: translateX(3px) translateY(3px);
   }
 

@@ -58,6 +58,7 @@ const game = document.querySelector(".game")
 const winnerPage = document.querySelector(".winner-page")
 const image = document.querySelector(".image")
 const finalScore = document.querySelector(".final-score")
+const reload = document.querySelector(".start-again")
 
 // rock button
 // I put all the eventListener body inside an If else statement, 
@@ -137,4 +138,9 @@ if (yourScore < 5 && computerScore < 5) {
     return
 }
     gameOver(yourScore, computerScore)
+})
+
+// play again button
+reload.addEventListener("click", function(e) {
+    window.location.reload()
 })
