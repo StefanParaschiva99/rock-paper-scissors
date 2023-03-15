@@ -73,12 +73,15 @@ if (yourScore < 5 && computerScore < 5) {
     if (computerSelection == "rock") {
         computerEmoji.textContent = "🤜"
         result.textContent = "TIE!"
+        result.style.cssText = "color: yellow;"
     } else if (computerSelection == "paper") {
         computerEmoji.textContent = "🤚"
         result.textContent = "LOSE!"
+        result.style.cssText = "color: red;"
     } else {
         computerEmoji.textContent = "✌️"
         result.textContent = "WIN!"
+        result.style.cssText = "color: green;"
     }
 // I used this variable with .textContent DOM method to change the text content diplayed in the game. 
 // Also I used the template strings that makes the code easier to read!
@@ -100,12 +103,15 @@ if (yourScore < 5 && computerScore < 5){
     if (computerSelection == "rock") {
         computerEmoji.textContent = "🤜"
         result.textContent = "WIN!"
+        result.style.cssText = "color: green;"
     } else if (computerSelection == "paper") {
         computerEmoji.textContent = "🤚"
         result.textContent = "TIE!"
+        result.style.cssText = "color: yellow;"
     } else {
         computerEmoji.textContent = "✌️"
         result.textContent = "LOSE!"
+        result.style.cssText = "color: red;"
     }
     yScore.textContent = `Your score: ${yourScore}`
     cScore.textContent = `Computer score: ${computerScore}`
@@ -125,12 +131,15 @@ if (yourScore < 5 && computerScore < 5) {
     if (computerSelection == "rock") {
         computerEmoji.textContent = "🤜"
         result.textContent = "LOSE!"
+        result.style.cssText = "color: red;"
     } else if (computerSelection == "paper") {
         computerEmoji.textContent = "🤚"
         result.textContent = "WIN!"
+        result.style.cssText = "color: green;"
     } else {
         computerEmoji.textContent = "✌️"
         result.textContent = "TIE!"
+        result.style.cssText = "color: yellow;"
     }
     yScore.textContent = `Your score: ${yourScore}`
     cScore.textContent = `Computer score: ${computerScore}`

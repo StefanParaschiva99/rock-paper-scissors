@@ -83,7 +83,7 @@ body {
 }
 
 .result{
-    color: red;
+    font-family: 'Press Start 2P', cursive, sans-serif;
     width: 50px;
     display: flex;
     justify-content: center;
