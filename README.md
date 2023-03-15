@@ -23,3 +23,9 @@ This was the first "real programming" project, so it was very exciting but also 
 
 ## Credits
 <a href="https://www.flaticon.com/free-stickers/robots" title="robots stickers">Robots stickers created by bukeicon - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/winner" title="winner icons">Winner icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/game-over" title="game over icons">Game over icons created by Freepik - Flaticon</a>
+
+
