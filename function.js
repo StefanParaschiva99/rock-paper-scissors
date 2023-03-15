@@ -24,20 +24,23 @@ function playRound(playerSelection, computerSelection) {
 // This function will stop the game after someone reach 5 points.
 // With this else if statement I return a game over page. 
 // I used setTimeout function to delay the appearance of the page by 500ms.
+// I used image.src to change only the src attribute
 function gameOver(yourScore, computerScore) {
     if (yourScore == 5) {
         setTimeout(function(){
             game.classList.add("hidden-content")
             winnerPage.classList.remove("hidden-content")
             winnerPage.classList.add("display-content")
-            message.textContent = "You Win!"
+            image.src = "images/winner.png"
+            finalScore.textContent = `${yourScore} - ${computerScore}`
         }, 500)
     } else if (computerScore == 5) {
         setTimeout(function(){
             game.classList.add("hidden-content")
             winnerPage.classList.remove("hidden-content")
             winnerPage.classList.add("display-content")
-            message.textContent = "Game Over!"
+            image.src = "images/game-over-2.png"
+            finalScore.textContent = `${yourScore} - ${computerScore}`
         }, 500)
     }
 }
@@ -53,7 +56,8 @@ const cScore = document.querySelector(".computer-score")
 const result = document.querySelector(".result")
 const game = document.querySelector(".game")
 const winnerPage = document.querySelector(".winner-page")
-const message = document.querySelector(".winner")
+const image = document.querySelector(".image")
+const finalScore = document.querySelector(".final-score")
 
 // rock button
 // I put all the eventListener body inside an If else statement, 
