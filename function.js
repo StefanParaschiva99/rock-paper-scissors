@@ -59,6 +59,8 @@ const winnerPage = document.querySelector(".winner-page")
 const image = document.querySelector(".image")
 const finalScore = document.querySelector(".final-score")
 const reload = document.querySelector(".start-again")
+const audio = new Audio("sounds/mixkit-cool-interface-click-tone-2568.wav")
+const buttons = document.querySelectorAll("button")
 
 // rock button
 // I put all the eventListener body inside an If else statement, 
@@ -151,5 +153,14 @@ if (yourScore < 5 && computerScore < 5) {
 
 // play again button
 reload.addEventListener("click", function(e) {
-    window.location.reload()
+    setTimeout(() => {
+        window.location.reload()
+    }, 500);
+})
+// I used this forEach loop to add the method .play() at all the buttons. 
+// Initially it didn't work because the button of that page made it reload and this didn't give to the audio the time to start
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        audio.play()
+    })
 })
