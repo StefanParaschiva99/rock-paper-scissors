@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* permanent classes */
+.header {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    background-color: #05040bf7;
+    color: white;
+    font-size: 32px;
+    padding: 8px;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-evenly;
+    background-color: #192E41;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+.winner-page {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    background-color: #192E41;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+}
+
+.container {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-score {
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.start {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.start > button {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    color: white;
+    width: 150px;
+    height: 50px;
+    background-color: #0C4160;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    margin: 20px;
+    border-radius: 5%;
+}
+
+.start > button:active {
+    transform: translateX(3px) translateY(3px);
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.result{
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+}
+
+.your-score, .computer-score {
+    background-color: #0D659D;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.your-score {
+    margin-right: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.your-choice, .computer-choice {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0D659D;
+    border-radius: 10%;
+}
+
+.btn {
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.reverse {
+    transform: scale(-1, 1); /* This reverse the element inside the div */
+}
+
+.buttons > button {
+    background-color: #0C4160;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    margin: 20px;
+    border-radius: 5%;
+}
+
+.buttons > button:active:hover {
+    transform: translateX(3px) translateY(3px);
+  }
+
+.buttons > button:hover {
+    border: 1px solid #EE4B2B;
+    box-shadow: 0px 0px 10px #EE4B2B; /* this makes the border color glow */
+    transform: scale(1.1)
+}
+
+img {
+    width: 100px;
+}
+
+
+.footer {
+    background-color: #05040bf7;
+    height: 3%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* classes to add with JavaScript */
+
+.hidden-content {
+    display: none
+}
+
+.display-content {
+    display: block;
+}
