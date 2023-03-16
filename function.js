@@ -33,6 +33,7 @@ function gameOver(yourScore, computerScore) {
             winnerPage.classList.add("display-content")
             image.src = "images/winner.png"
             finalScore.textContent = `${yourScore} - ${computerScore}`
+            winnerAudio.play()
         }, 500)
     } else if (computerScore == 5) {
         setTimeout(function(){
@@ -41,6 +42,7 @@ function gameOver(yourScore, computerScore) {
             winnerPage.classList.add("display-content")
             image.src = "images/game-over-2.png"
             finalScore.textContent = `${yourScore} - ${computerScore}`
+            gameOverAudio.play()
         }, 500)
     }
 }
@@ -61,6 +63,8 @@ const finalScore = document.querySelector(".final-score")
 const reload = document.querySelector(".start-again")
 const audio = new Audio("sounds/mixkit-cool-interface-click-tone-2568.wav")
 const buttons = document.querySelectorAll("button")
+const winnerAudio = new Audio("sounds/success-fanfare-trumpets-6185.mp3")
+const gameOverAudio = new Audio("sounds/mixkit-sad-game-over-trombone-471.wav")
 
 // rock button
 // I put all the eventListener body inside an If else statement, 

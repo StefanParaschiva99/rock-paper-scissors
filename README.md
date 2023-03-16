@@ -38,7 +38,13 @@ All the pictures and sounds that I used on this website are copyright free and a
 
 - [Winner Icon](https://www.flaticon.com/free-icons/winner)
 
-- [Game Over](https://www.flaticon.com/free-icons/game-over)
+- [Game Over Icon](https://www.flaticon.com/free-icons/game-over)
+
+- [Winner Sound Effect](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6185)
+
+- [Game Over Sound Effect](https://mixkit.co/free-sound-effects/game-over/)
+
+- [Game Over Sound Effect](https://mixkit.co/free-sound-effects/click/)
 
 
 
