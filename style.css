@@ -112,6 +112,12 @@ body {
     margin-right: 50px;
 }
 
+.prompt {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
 .buttons {
     display: flex;
     justify-content: center;
